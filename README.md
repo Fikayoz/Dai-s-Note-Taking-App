@@ -1,0 +1,2 @@
+- A Note-taking app
+- Shoutout to https://www.youtube.com/@GreatStackDev
