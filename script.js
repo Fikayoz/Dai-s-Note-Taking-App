@@ -10,6 +10,10 @@ function updateStorage(){
     localStorage.setItem("notes", notesContainer.innerHTML);
 }
 
+function clearStorage(){
+    localStorage.setItem("notes", "");
+}
+
 createBtn.addEventListener("click", ()=>{
     let inputBox = document.createElement("p");
     let img = document.createElement("img");
@@ -34,4 +38,13 @@ notesContainer.addEventListener("click", function(e){
     }
 })
 
+document.addEventListener("keydown", event =>{
+    if(event.key === "Enter"){
+        document.execCommand("insertLineBreak");
+        event.preventDefault();
+    }
+})
+
+// clearStorage is a debug function to wipe the local storage in case something funny/strange happens
+// clearStorage();
 showNotes();
