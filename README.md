@@ -1,2 +1,2 @@
-- A Note-taking app
+- A simple Note-taking app built from scratch
 - Shoutout to https://www.youtube.com/@GreatStackDev
